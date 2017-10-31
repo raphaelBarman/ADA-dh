@@ -1,5 +1,4 @@
-# Title
-A study of Amazon's reviews
+# A study of Amazon's reviews
 # Abstract
 Have you ever asked yourself if a truly reliable review existed? The internet is full of both hypercritical and uncritical users, which makes it hard to get an idea on a product from its reviews. Is there a way to define clear metrics based on such unreliable material? Trying to clarify this is the goal of our project. In order to do this we will explore the Amazon dataset and try determining the magnitude of the correlation between a product review and its other features - above all the sales - as well as exploring the role that Amazon various features - like the suggestion system and the product categorization - play in this picture.
 We will use a dataset of Amazon reviews spanning 18 years in order to answer this question. 
