@@ -22,6 +22,8 @@ Current answer:
 We started by focusing on the "bought together" feature because it is deeply correlated to the "also bought" feature. The reason for this correlation is easy to see: if the user is influenced by the "also bought" feature, then he'll buy the featured object along with the one he's currently visualizing.
 We found out that often product with very different ranking are bought together, which hints at the possibility that popular (="good") products may indeed increase the sales of unpopular (="bad") projects.
 We need to further delve into the data to draw more conclusions.
+
+
 Question 5: #review / #sales ratio. Does a commercially successful product implies many reviews? What about the inverse relationship?
 
 Current answer:
@@ -34,6 +36,7 @@ Question 6: Product Categorization. Is there a correlation between the product c
 Current answer:
 Our results indeed hints at the existence of general categories with more reviews and niche categories with less reviews.
 For example, a general and popular category like 'automotive'  has 17 reviews in our sample dataset, while a niche and obscure categories like 'Power Window Motors'  has 1 review.
+
 # Dataset
 We plan on using the Amazon review dataset. In this dataset, we have all the core relevant information we want:
 - A way to track a user through its userid
@@ -43,10 +46,11 @@ We plan on using the Amazon review dataset. In this dataset, we have all the cor
 We can also find from the metadata of the article the brand, the category, the related articles and the sales rank.
 
 The dataset is can also be found under convenient alternative forms, for example a subset containing all users with at least 5 reviews, which could prove to be very useful.
-# A list of internal milestones up until project milestone 2
-1. Getting familiarized with the cluster environment.
-2. Exploring the different variants of the dataset in order to find the one the most convenient for us.
-3. Exploring the data in general to find some useful metrics (review per user/product, average ratings per user, etc.).
-4. Assess if there is any missing data and if so, find a wind to scrap it.
+
+# A list of internal milestones up until project milestone 3
+1. Develop our answers and go deeper in the analysis, finding out what kind of other questions can be triggered by answering to others
+2. Finding some nice visualisation of the data that can be relevant
+3. Begin the redaction of our observations for the report
+
 
 # Questions for TAa
