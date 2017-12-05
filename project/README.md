@@ -9,11 +9,23 @@ We believe trying to get some insight out of this confused system could help the
 Question 1:
 Review quality vs. Review quantity. Which of the two metrics is more representative of the product quality and popularity?
 
+Current answer:
+We explored the review text to see how easy it would be to find some metrics. The current metrics we have is very simple, it is simply the number of words per review, but it can give nice insights.
+We also explored the helpfulness metrics trying to find correlation between helpfulness and rating, we did not find convincing results, but in later steps, using the metrics from the metadata, we will be able to try to find others insights.
+
 Question 2:
 Influence of reviewer personality. Is there a trend in a user's review history that allows to consider him to be biased or unbiased?
 
+Current answer:
+We found some basic metrics that look promising and were quite easy to compute and thus to scale. However, we need a better understanding of what kind of correlation could be useful. At the moment we mainly looked at the fact that some reviewers are giving always the same grades, which could be seen as a bias.
+
 Question 3:
 Brand fidelity/hate. Can a user be biased towards certain brands, giving them only good/bad reviews?
+
+Current answer:
+We managed to find the reviews or a particular user for a particular brand in a method that seems scalable. The first results from the method seem promising, we can see a difference when looking at the data from this angle.
+
+
 
 Question 4:
 Influence of "also bought..." feature. What's the effect of this feature? Does it rise sales of potentially "bad" product which happen to be associated with "good" product (where "bad" and "good"have to be formally defined).
@@ -22,6 +34,7 @@ Current answer:
 We started by focusing on the "bought together" feature because it is deeply correlated to the "also bought" feature. The reason for this correlation is easy to see: if the user is influenced by the "also bought" feature, then he'll buy the featured object along with the one he's currently visualizing.
 We found out that often product with very different ranking are bought together, which hints at the possibility that popular (="good") products may indeed increase the sales of unpopular (="bad") projects.
 We need to further delve into the data to draw more conclusions.
+
 Question 5: #review / #sales ratio. Does a commercially successful product implies many reviews? What about the inverse relationship?
 
 Current answer:
