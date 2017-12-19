@@ -42,15 +42,16 @@ Albane Descombes \\
 \begin{document}
 \maketitle
 \begin{abstract}
-  This document describes and discusses the results obtained in the context of the authors' project in ADA2017. The project aims at deepening the understanding 
-  of Amazon's whole system. Particular attention is put into detecting if the system seems to be used correctly or if there's a general bias. \\
-  The analysis is centered around three different aspects. \\ First, the review feature, with the goal to describe its usage from the userbase and answer the question of whether reviews are generally biased or not. \\ Second, the adverting feature which is composed of the "also bought", "also viewed" and "bought together" features. The intra-correlation among the sub-features as well as their impact on the whole system are the subject of study. \\ Lastly, the categorization feature and its impact on the user perception of a product. \\  The three features represent three different starting points for the analysis which should ideally converge in a single conclusion about bias.
+ Can we really trust the Amazon's review system? This document describes and discusses the results obtained in the context of the authors' project in ADA2017. The project aims at deepening the understanding 
+  of Amazon's whole system. Particular attention is put into detecting if the system seems to be used correctly or if there's a general bias. We found out that users tend to rate very high with low variation. That Amazon 'also bought' and 'bought together' features played a big role in the ranking of the products. Finally, we also found that the more a category has reviews, the less helpful they tend to be.
 \end{abstract}
 
 
 \section{Introduction}
-  Explain the relevant information about metadata here.
-  
+  The analysis is centered around three different aspects. \\ First, the review feature, with the goal to describe its usage from the userbase and answer the question of whether reviews are generally biased or not. \\ Second, the adverting feature which is composed of the "also bought", "also viewed" and "bought together" features. The intra-correlation among the sub-features as well as their impact on the whole system are the subject of study. \\ Lastly, the categorization feature and its impact on the user perception of a product. \\  The three features represent three different starting points for the analysis which should ideally converge in a single conclusion about bias.
+\section{Related work}
+\section{Data collection}
+All the data comes from the Amazon product dataset created by James McAuley \cite{mcauley2015image}. We wanted to use a quite big sample, however did want to have a significant number of reviews per user and per product, thus we settled on the 5-core dataset that guarantees reviews with a minimum of 5 reviews per reviewer and 5 reviews products
 \section{Review feature}
     The first step in trying to describe Amazon's reviews was trying to detect potential correlation between its features. This was done by defining two metrics: the "wordcount", which is 
   the length of a review in number of words, and the "helpfulness", which is a measure of the helpfulness of a review in the range [0, 1]. By observing the distribution of these two metrics it was possible to remark that the majority of reviews are less than 1000-word long and that their average helpfulness is high [add figure]. The correlation between these two metrics and  other descriptive features of the review was studied. The only relevant result was noticing the presence of a weak Spearman correlation (0.26) between helpfulness and the review's rating of the product. This hint at the presence of a monotonic component in the relationship, meaning that if a review gives a high rating to the review product then the review is slightly more likely to be judged as helpful. This is not the expected behaviour of the relationship, as the product rating of a review and its helpfulness should be independent variables.\\\\
@@ -78,7 +79,11 @@ In the third part of the analysis, the correlation between average helpfulness a
 
 In light of these observations, it can be affirmed that bias plays a role in the Amazon's system: may it be user introduced bias as seen in the first, or "design bias" as seen in the second part, or even bias due to a lack of information as seen in the third part.
 
+\nocite{laerd}
+\nocite{minitab}
 
+\bibliographystyle{acl}
+\bibliography{bibliography}
 \begin{thebibliography}{}
 
 \bibitem[\protect\citename{Laerd Statistics}]{}
